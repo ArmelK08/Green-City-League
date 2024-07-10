@@ -1,0 +1,23 @@
+.hero-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.hero-t h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-t p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}

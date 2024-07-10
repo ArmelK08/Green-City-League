@@ -1,0 +1,79 @@
+.sponsoring {
+    width: 100vw;
+    min-height: 90vh;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.199);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.merchBtn {
+    position: absolute;
+    padding: auto;
+}
+
+.glasses {
+    width: 100vw;
+    min-height: 90vh;
+    background: url('../../assets/photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Added to stack vertically */
+}
+
+.merch {
+    width: 70%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Default to horizontal layout */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sections right and left */
+.right, .left {
+    width: 50%; /* 50% width each in horizontal layout */
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.right {
+    background: url('../../assets/IMG-20231212-WA0259(1).jpg') no-repeat center center;
+    background-size:cover;
+}
+
+.left {
+    background: url('../../assets/IMG-20231009-WA0025(1).jpg') no-repeat center left;
+    background-size:cover;
+}
+
+@media (max-width: 768px) {
+    .glasses, .sponsoring {
+        min-height: auto;
+        height: 100vh;
+    }
+    .merch {
+        flex-direction: column; 
+        height: auto;
+    }
+    .right, .left {
+        width: 100%; 
+        height: 45vh; 
+    }
+}

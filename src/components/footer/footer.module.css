@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of the wrapper */
+}
+
+main {
+  flex: 1; /* This will make the main content take up the remaining space */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 150px; /* Adjust the height as needed */
+  width: 100vw;
+}
+
+.gcl {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.separator {
+  width: 2px;
+  height: 70px;
+  background-color: white;
+  margin: 0 50px 0 5px;
+}
+
+.rs {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.icon {
+  font-size: 2rem;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .gcl, .rs {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+.text{
+  text-align: center;
+  padding: 5px;
+
+}
+  .separator {
+    display: none;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+  .text{
+    text-align: center;
+    padding: 5px;
+  
+  }
+  .circle {
+    width: 35px;
+    height: 35px;
+    margin: 0 3px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px 5px;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}

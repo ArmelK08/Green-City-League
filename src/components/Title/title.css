@@ -1,0 +1,18 @@
+.title-container {
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.title {
+    
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white; /* Default color */
+    margin: 0; /* Ensure no additional margin */
+    padding: 20px; /* Optional: Add some padding if needed */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+}

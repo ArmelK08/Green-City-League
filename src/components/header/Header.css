@@ -1,0 +1,45 @@
+.header{
+    position: relative;
+    width: 100%;
+    height: 75px;
+    z-index: 1;
+    display:flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0 80px;
+    background: linear-gradient(135deg, rgba(225, 225, 225, 0),rgba(85, 83, 83, 0.637));
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: 0 8px 32px 0 rgba(225,225,225,0.17);
+    
+    }
+
+.logo{
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 45px;
+color:#fb4e02;
+}
+li{
+    list-style: none;
+}
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+}
+.navbar ul li a{
+    display: flex;
+    justify-content: space-around;
+    
+font-size: 18px;
+    padding: 10px;
+    
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+span{
+    color:white;
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    background-image: url(../../assets/20230820_163203.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.align {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.about {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.767);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(0,0,0,0.075);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 80%; 
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

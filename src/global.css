@@ -1,0 +1,85 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Audiowide&display=swap);
+:root {
+  --primary-color: #3b454f;
+  --second-color: #20a39d;
+  --background-first: #edeee9;
+  --background-white: #fafafa;
+  --text-color: #acc1cf;
+  --title-color: #29333d;
+  --items-color: #f6624a;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Audiowide', display;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Nav Bar */
+.nav-responsive {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-first);
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -150%;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-responsive.active {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hero Responsive */
+.hero-responsive {
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .hero-responsive {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+}
+
+/* Text Center */
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .text-center {
+    text-align: center;
+  }
+}

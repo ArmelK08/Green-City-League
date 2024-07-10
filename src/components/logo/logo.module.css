@@ -1,0 +1,7 @@
+.logo {
+    margin-right: 15px;
+    background: url('../../assets/photo-removebg-preview.png');
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+  }

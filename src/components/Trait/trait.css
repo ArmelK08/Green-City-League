@@ -1,0 +1,8 @@
+.trait{
+    width: 60px;
+    height: 5px;
+    background:green;
+    position: relative;
+    left: 560px;
+    top: -20px;
+}
