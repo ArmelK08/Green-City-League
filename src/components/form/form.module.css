@@ -134,9 +134,9 @@ html {
 /* Styles spécifiques pour les téléphones */
 @media screen and (max-width: 480px) {
 	#msform {
-	  width: 50%; /* Ajuster la largeur du formulaire */
+	  width: 75%; /* Ajuster la largeur du formulaire */
 	  margin: auto; /* Réduire la marge pour un espacement plus compact */
-	  transform: translate(-15px, 15px); /* Déplacer le formulaire */
+	  transform: translate(-25px, 15px); /* Déplacer le formulaire */
 	}
   
 	#msform fieldset {
