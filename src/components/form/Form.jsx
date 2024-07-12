@@ -63,7 +63,7 @@ function Form() {
   };
 
   return (
-    <div>
+    <div >
       <form id={styles.msform} onSubmit={handleSubmit}>
         {/* Progressbar */}
         <ul id={styles.progressbar}>

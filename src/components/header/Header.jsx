@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './Header.module.css'; // Importez les styles du module CSS
+import styles from './Header.module.css'; 
 import Logo from '../logo/Logo';
 import { Link } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ function Header() {
   };
 
   return (
-    <div className={styles.header}> {/* Utilisation du nom de classe généré par le module CSS */}
+    <div className={styles.header}> 
       <div className={styles.logo}>
         <Logo />
       </div>

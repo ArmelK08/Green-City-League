@@ -1,7 +1,7 @@
 .header {
+  top: 0%;
     position: fixed;
     width: 100%;
-    min-width:100vw ;
     height: 75px;
     z-index: 1;
     display: flex;
@@ -12,9 +12,7 @@
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     box-shadow: 0 8px 32px 0 rgba(225, 225, 225, 0.17);
-
   }
-  
   
   .logo {
     font-family: 'Outfit';
