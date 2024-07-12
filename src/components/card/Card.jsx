@@ -32,7 +32,6 @@ function Card() {
     </div>
     <div className="card__body">
       <h3 className="card__name">FRATERNITE</h3>
-      <p className="card__job">astronaut &amp; engineer</p>
       <div className='card__bioHover'>
 <p className="card__bio">
         {" "}
@@ -68,7 +67,6 @@ function Card() {
     </div>
     <div className="card__body">
       <h3 className="card__name">GRINTA</h3>
-      <p className="card__job">astronaut &amp; engineer</p>
       <p className="card__bio">
         {" "}
         compétitivité saine qui pousse les joueurs à se dépasser, à améliorer constamment leurs compétences
@@ -101,7 +99,6 @@ function Card() {
     </div>
     <div className="card__body">
       <h3 className="card__name">ENGAGEMENT</h3>
-      <p className="card__job">astronaut &amp; engineer</p>
       <p className="card__bio">
         {" "}
          engager envers l'équipe, vous aiderez vos coéquipiers à s'améliorer et vous serez prêts à faire des sacrifices pour l'équipe.

@@ -94,7 +94,7 @@ function Form() {
           <h2 className={styles.fsTitle}>IMPORTANT</h2>
           <h3 className={styles.fsSubtitle}></h3>
           <div className={styles.info}>
-            LES FRAIS D'INSCRIPTION SONT AUX PRIX DE 20.000 FR POUR VALIDER L'INSCRIPTION FAITES UN DEPOT AU 0777456115 / 0778261090 
+            LES FRAIS D'INSCRIPTION SONT AUX PRIX DE 25.000 FR POUR VALIDER L'INSCRIPTION FAITES UN DEPOT AU 0777456115 / 0778261090 
             ET REVENEZ APPUYER "VALIDER"
           </div>
           <input type="button" name="Retour" className={`${styles.actionButton} ${styles.previous}`} value="Retour" onClick={handlePrevious} />
