@@ -68,8 +68,8 @@ function Form() {
         {/* Progressbar */}
         <ul id={styles.progressbar}>
           <li className={currentStep >= 0 ? styles.active : ''}>Information Personnelle</li>
-          <li className={currentStep >= 1 ? styles.active : ''}>Social Profiles</li>
-          <li className={currentStep >= 2 ? styles.active : ''}>Personal Details</li>
+          <li className={currentStep >= 1 ? styles.active : ''}>Team</li>
+          <li className={currentStep >= 2 ? styles.active : ''}>paiement</li>
         </ul>
         {/* Fieldsets */}
         <fieldset ref={(el) => (fieldsets.current[0] = el)} className={styles.fieldset}>
@@ -92,7 +92,7 @@ function Form() {
         </fieldset>
         <fieldset ref={(el) => (fieldsets.current[2] = el)} className={styles.fieldset}>
           <h2 className={styles.fsTitle}>IMPORTANT</h2>
-          <h3 className={styles.fsSubtitle}>We will never sell it</h3>
+          <h3 className={styles.fsSubtitle}></h3>
           <div className={styles.info}>
             LES FRAIS D'INSCRIPTION SONT AUX PRIX DE 20.000 FR POUR VALIDER L'INSCRIPTION FAITES UN DEPOT AU 0777456115 / 0778261090 
             ET REVENEZ APPUYER "VALIDER"
