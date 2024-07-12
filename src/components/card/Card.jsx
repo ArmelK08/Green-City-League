@@ -1,10 +1,10 @@
 import React from 'react'
 import './card.css'
 import img from '../../assets/photo.jpg'
-import img1 from '../../assets/FRATERNITY.png';
-import img2 from '../../assets/GREENTA 2.png';
-import img3 from '../../assets/3.png';
-import {card} from '../data'
+import img1 from '../../assets/FRATERNITY.jpg';
+import img2 from '../../assets/IMG-20231128-WA0178.jpg';
+import img3 from '../../assets/3.jpg';
+// import {card} from '../data'
 
 function Card() {
     return (
@@ -18,7 +18,7 @@ function Card() {
     </button>
     <figure className="card__image">
             <img
-              src={img}
+              src={img1}
               alt="Short description"
             />
           </figure>
@@ -33,10 +33,13 @@ function Card() {
     <div className="card__body">
       <h3 className="card__name">FRATERNITE</h3>
       <p className="card__job">astronaut &amp; engineer</p>
-      <p className="card__bio">
+      <div className='card__bioHover'>
+<p className="card__bio">
         {" "}
-        American astronaut, engineer, and the first person to walk on the Moon.
+        la fraternité dans le basketball enrichit l'expérience sportive mais également les relations humaines
       </p>
+      </div>
+      
     </div>
     <div className="card__footer">
       <p className="card__date">Feb 10 2018</p>
@@ -51,7 +54,7 @@ function Card() {
     </button>
     <figure className="card__image">
             <img
-              src={img}
+              src={img3}
               alt="Short description"
             />
           </figure>
@@ -68,7 +71,7 @@ function Card() {
       <p className="card__job">astronaut &amp; engineer</p>
       <p className="card__bio">
         {" "}
-        American astronaut, engineer, and the first person to walk on the Moon.
+        compétitivité saine qui pousse les joueurs à se dépasser, à améliorer constamment leurs compétences
       </p>
     </div>
     <div className="card__footer">
@@ -84,7 +87,7 @@ function Card() {
     </button>
     <figure className="card__image">
             <img
-              src={img}
+              src={img2}
               alt="Short description"
             />
           </figure>
@@ -101,7 +104,7 @@ function Card() {
       <p className="card__job">astronaut &amp; engineer</p>
       <p className="card__bio">
         {" "}
-        American astronaut, engineer, and the first person to walk on the Moon.
+         engager envers l'équipe, vous aiderez vos coéquipiers à s'améliorer et vous serez prêts à faire des sacrifices pour l'équipe.
       </p>
     </div>
     <div className="card__footer">

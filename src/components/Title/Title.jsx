@@ -8,9 +8,6 @@ function Title({ text = 'Default Title', className = '', style = {} }) {
       <h1 className={`title ${className}`} style={style}>
         {text}
       </h1>
-      {/* <div className='line'>
-        <Trait/>
-      </div> */}
       
     </div>
   );

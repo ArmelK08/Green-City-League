@@ -19,6 +19,7 @@ function Header() {
                 <Link to="/inscription">
                    <li><a href="">Inscription</a></li>  
                 </Link>
+               
                 
               </ul>
             </div>

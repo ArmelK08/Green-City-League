@@ -20,7 +20,6 @@ function Sponsoring() {
                     <a href=' https://wa.link/814jpf'>
                         <Bouton text='Acheter' className="btn--snakeBorder" />
                     </a>
-                    
                 </div>
             </div>
         </div>

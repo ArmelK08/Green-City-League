@@ -1,6 +1,7 @@
-import img1 from '../assets/FRATERNITY.png';
-import img2 from '../assets/GREENTA 2.png';
-import img3 from '../assets/3.png';
+// import img from '../../assets/photo.jpg'
+import img1 from '../../assets/FRATERNITY.jpg';
+import img2 from '../../assets/GREENTA2.jpg';
+import img3 from '../../assets/3.jpg';
 
 export const card = [img1, img2, img3];
 

@@ -18,6 +18,13 @@
     width: 100%;
 }
 
+.aboutLine {
+    margin-bottom: 20px; 
+    margin-left: -200px;
+    display: flex;
+    justify-content: center; 
+}
+
 .about {
     width: 100vw;
     min-height: 100vh;
