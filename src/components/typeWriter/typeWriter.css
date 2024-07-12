@@ -1,4 +1,12 @@
-.typewrite > .wrap { 
+.typewrite > .wrap {
     border-right: 0.08em solid #fff;
-    font-size:50px ;
-}
+    font-size: 50px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .typewrite > .wrap {
+      font-size: 30px; /* Réduisez la taille de la police sur les petits écrans */
+      border-right-width: 0.05em; /* Réduisez l'épaisseur de la bordure sur les petits écrans */
+    }
+  }
+  

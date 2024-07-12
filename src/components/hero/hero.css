@@ -1,10 +1,9 @@
-
-.hero{
-    width: 100vw;
-    height: 100vh;
+.hero {
+    /* display: flex; */
+    align-items: center;
     justify-content: center;
+    height: 100vh;
     background: black;
-    
-    
+    width: 100%;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
 }
-
