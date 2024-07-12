@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
+      "source": "^/admin/(.*)",
+      "destination": "/admin/index.html"
+    },
+    {
+      "source": "^/inscription/(.*)",
+      "destination": "/inscription/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
