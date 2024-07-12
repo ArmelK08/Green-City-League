@@ -13,12 +13,12 @@
     width: 100vw;
     min-height: 100vh;
     display: flex;
-    justify-content: center; /* Centrer le contenu horizontalement */
-    align-items: center; /* Centrer le contenu verticalement */
+    justify-content: center; 
+    align-items: center; 
 }
 
 .info-card {
-    position: relative; /* Position relative pour permettre le positionnement absolu de .right */
+    position: relative; 
     width: 100vw; /* Prend toute la largeur du conteneur */
     display: flex;
     flex-direction: row; /* Disposition horizontale par défaut */
@@ -27,6 +27,7 @@
     font-weight: lighter;
     font-size: 25px;
     padding: 30px;
+    padding-top:80px ;
     
 }
 .title{
@@ -52,7 +53,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     padding: 20px;
 }
