@@ -125,3 +125,49 @@ html {
 .step{
 	margin-top: 25px;
 }
+/* Styles spécifiques pour les téléphones */
+@media screen and (max-width: 480px) {
+	#msform {
+	  width: 90%; /* Ajuster la largeur du formulaire */
+	  margin: 30px auto; /* Réduire la marge pour un espacement plus compact */
+	}
+  
+	#msform fieldset {
+	  width: 100%; /* Utiliser toute la largeur disponible */
+	  padding: 15px; /* Réduire l'espace intérieur */
+	}
+  
+	#msform input,
+	#msform textarea {
+	  padding: 12px; /* Réduire la taille du padding pour les entrées */
+	  font-size: 12px; /* Réduire la taille de la police */
+	}
+  
+	#msform .actionButton {
+	  width: 80px; /* Réduire la largeur des boutons */
+	  font-size: 12px; /* Réduire la taille de la police des boutons */
+	}
+  
+	.fs-title {
+	  font-size: 14px; /* Réduire la taille des titres de section */
+	}
+  
+	.fs-subtitle {
+	  font-size: 11px; /* Réduire la taille des sous-titres */
+	}
+  
+	#progressbar {
+	  margin-bottom: 20px; /* Ajuster l'espacement entre la barre de progression et le contenu */
+	}
+  
+	#progressbar li:before {
+	  width: 15px; /* Réduire la taille du marqueur de progression */
+	  line-height: 15px;
+	  font-size: 8px; /* Réduire la taille de la police du marqueur */
+	}
+  
+	.step {
+	  margin-top: 20px; /* Ajuster l'espacement entre les étapes */
+	}
+  }
+  
