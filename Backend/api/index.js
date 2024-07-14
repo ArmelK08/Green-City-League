@@ -5,7 +5,11 @@ const InscriptionRoutes = require('../routes/Inscriptions.jsx');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+    origin: 'https://gcl-indol.vercel.app/', // Remplacez par l'URL de votre frontend
+    optionsSuccessStatus: 200,
+  };
+  app.use(cors(corsOptions));
 
 mongoose.connect('mongodb+srv://koblankossonou:melok0810@cluster0.ecsz1gb.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
