@@ -8,7 +8,7 @@ const InscriptionSchema = new mongoose.Schema({
     prenoms: {
         type: String,
         required: [true, 'le Prenoms est requis'],
-        minLength: 3,
+        
         maxLength: 20
     },
     contact: {

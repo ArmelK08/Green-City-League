@@ -47,7 +47,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/inscription', formData);
+      const response = await axios.post('http://gcl-indol.vercel.app/api/inscription', formData);
       if (response.data.msg === 'Inscription effectuée') {
         setShowModal(true);
       } else {

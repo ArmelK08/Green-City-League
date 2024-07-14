@@ -318,7 +318,8 @@ body {
   width: calc(100% + 80px); /* Ajuster la largeur pour compenser les marges/padding */
   margin-left: -40px; /* Ajuster si nécessaire */
   /* margin-top: 53px;  */
-
+text-align: center;
+padding: 4px 2px;
   font-size: var(--fontOrigin);
   border-radius: 8px;
 
