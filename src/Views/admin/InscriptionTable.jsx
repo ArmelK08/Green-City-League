@@ -20,7 +20,7 @@ function InscriptionTable() {
   // Fonction pour récupérer les inscriptions depuis l'API
   const fetchInscriptions = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/inscription');
+      const response = await axios.get('http://gcl-indol.vercel.app/api/inscription');
       setInscriptions(response.data.inscriptions);
     } catch (error) {
       console.error('Erreur lors du chargement des inscriptions:', error.message);
@@ -31,7 +31,7 @@ function InscriptionTable() {
   // Fonction pour supprimer une inscription par ID
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/inscription/${id}`);
+      await axios.delete(`http:/gcl-indol.vercel.app/api/inscription/${id}`);
       fetchInscriptions(); // Actualisation des inscriptions après suppression
     } catch (error) {
       console.error('Erreur lors de la suppression:', error);
@@ -68,7 +68,7 @@ function InscriptionTable() {
   // Fonction pour sauvegarder les modifications d'une inscription
   const handleSaveEdit = async (id) => {
     try {
-      await axios.put(`http://localhost:3000/api/inscription/${id}`, editData);
+      await axios.put(`http://gcl-indol.vercel.app/api/inscription/${id}`, editData);
       setEditMode(null); // Désactivation du mode édition après sauvegarde
       fetchInscriptions(); // Actualisation des inscriptions après mise à jour
     } catch (error) {
