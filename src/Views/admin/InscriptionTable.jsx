@@ -20,7 +20,7 @@ function InscriptionTable() {
   // Fonction pour récupérer les inscriptions depuis l'API
   const fetchInscriptions = async () => {
     try {
-      const response = await axios.get('https://gcl-backend-92xrugdww-koblan-s-projects.vercel.app/api/inscription');
+      const response = await axios.get('https://api-green-city-league-7e45969d49f6.herokuapp.com/api/inscription');
       setInscriptions(response.data.inscriptions);
     } catch (error) {
       console.error('Erreur lors du chargement des inscriptions:', error.message);
@@ -31,7 +31,7 @@ function InscriptionTable() {
   // Fonction pour supprimer une inscription par ID
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://gcl-backend-92xrugdww-koblan-s-projects.vercel.app/api/inscription/${id}`);
+      await axios.delete(`https://api-green-city-league-7e45969d49f6.herokuapp.com/api/inscription/${id}`);
       fetchInscriptions(); // Actualisation des inscriptions après suppression
     } catch (error) {
       console.error('Erreur lors de la suppression:', error);
@@ -68,7 +68,7 @@ function InscriptionTable() {
   // Fonction pour sauvegarder les modifications d'une inscription
   const handleSaveEdit = async (id) => {
     try {
-      await axios.put(`https://gcl-backend-92xrugdww-koblan-s-projects.vercel.app/api/inscription/${id}`, editData);
+      await axios.put(`https://api-green-city-league-7e45969d49f6.herokuapp.com/api/inscription/${id}`, editData);
       setEditMode(null); // Désactivation du mode édition après sauvegarde
       fetchInscriptions(); // Actualisation des inscriptions après mise à jour
     } catch (error) {
