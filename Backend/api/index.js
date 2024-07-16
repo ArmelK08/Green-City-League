@@ -11,7 +11,7 @@ const corsOptions = {
   };
   app.use(cors(corsOptions));
 
-mongoose.connect('mongodb+srv://koblankossonou:melok0810@cluster0.ecsz1gb.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://koblankossonou:koblankossonou@cluster0.ecsz1gb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
