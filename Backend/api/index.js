@@ -10,12 +10,6 @@ app.use(express.json());
   methods: 'GET,POST,PUT,DELETE', // Autorise ces méthodes HTTP
   allowedHeaders: ['Content-Type', 'Authorization'], // Autorise ces en-têtes
    
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-  next();
-});
 app.use(cors(corsOptions));
 
 mongoose.connect('mongodb+srv://koblankossonou:koblankossonou@cluster0.ecsz1gb.mongodb.net/?retryWrites=true&w=majority', {
