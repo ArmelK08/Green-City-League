@@ -1,26 +1,27 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const InscriptionRoutes = require('../routes/Inscriptions.jsx');
+const InscriptionRoutes = require('../routes/Inscriptions');
 
 const app = express();
 app.use(express.json());
-const corsOptions = {
-    origin: 'https://gcl-indol.vercel.app/', // Remplacez par l'URL de votre frontend
-    optionsSuccessStatus: 200,
-  };
-  app.use(cors(corsOptions));
 
-mongoose.connect('mongodb+srv://koblankossonou:koblankossonou@cluster0.ecsz1gb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+const corsOptions = {
+  origin: 'https://gcl-indol.vercel.app', // Remplacez par l'URL de votre frontend
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
+mongoose.connect('mongodb+srv://koblankossonou:melok0810@cluster0.ecsz1gb.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
 })
 .then(() => console.log('Connexion à MongoDB réussie !'))
 .catch(err => console.log('Connexion à MongoDB échouée !', err));
 
 app.use('/api', InscriptionRoutes);
 
-// Ajoutez cette ligne pour définir une route pour la racine
 app.get('/', (req, res) => {
   res.send('Bienvenue sur l\'API Green City League');
 });
@@ -32,7 +33,6 @@ const server = app.listen(PORT, () => {
   console.log(`App écoute le port ${PORT}`);
 });
 
-// Gestion des erreurs d'écoute du port
 server.on('error', (err) => {
   if (err.code === 'EADDRINUSE') {
     console.log(`Le port ${PORT} est déjà utilisé, en utilisant un port différent...`);
