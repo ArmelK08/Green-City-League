@@ -6,10 +6,10 @@ const InscriptionRoutes = require('../routes/Inscriptions');
 const app = express();
 app.use(express.json());
 
-const corsOptions = {
-  origin: 'https://gcl-indol.vercel.app', // Remplacez par l'URL de votre frontend
-  optionsSuccessStatus: 200,
-};
+ origin: 'https://gcl-indol.vercel.app', // Autorise uniquement cette origine
+  methods: 'GET,POST,PUT,DELETE', // Autorise ces méthodes HTTP
+  allowedHeaders: ['Content-Type', 'Authorization'], // Autorise ces en-têtes
+   
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
