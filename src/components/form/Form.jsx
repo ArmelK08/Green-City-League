@@ -9,6 +9,7 @@ function Form() {
   const [showModal, setShowModal] = useState(false);
   const [formData, setFormData] = useState({
     nom: '',
+    
     prenoms: '',
     contact: '',
     team: '',
@@ -47,7 +48,7 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://api-green-city-league-7e45969d49f6.herokuapp.com/api/inscription', formData);
+      const response = await axios.post(`https://api-green-city-league-7e45969d49f6.herokuapp.com/api/inscription`, formData);
       if (response.data.msg === 'Inscription effectuée') {
         setShowModal(true);
       } else {
@@ -63,13 +64,13 @@ function Form() {
   };
 
   return (
-    <div className={styles.contain} >
+    <div className={styles.contain}>
       <form id={styles.msform} onSubmit={handleSubmit}>
         {/* Progressbar */}
         <ul id={styles.progressbar}>
           <li className={currentStep >= 0 ? styles.active : ''}>Information Personnelle</li>
           <li className={currentStep >= 1 ? styles.active : ''}>Team</li>
-          <li className={currentStep >= 2 ? styles.active : ''}>paiement</li>
+          <li className={currentStep >= 2 ? styles.active : ''}>Paiement</li>
         </ul>
         {/* Fieldsets */}
         <fieldset ref={(el) => (fieldsets.current[0] = el)} className={styles.fieldset}>
@@ -78,27 +79,25 @@ function Form() {
             <input type="text" name="nom" placeholder="NOM" value={formData.nom} onChange={handleChange} required />
             <input type="text" name="prenoms" placeholder="PRENOMS" value={formData.prenoms} onChange={handleChange} required />
             <input type="number" name="contact" placeholder="CONTACT" value={formData.contact} onChange={handleChange} required />
-            <input type="button" name="Suivant" className={`${styles.actionButton} ${styles.next}`} value="Suivant" onClick={handleNext} />
+            <input type="button" className={`${styles.actionButton} ${styles.next}`} value="Suivant" onClick={handleNext} />
           </div>
         </fieldset>
         <fieldset ref={(el) => (fieldsets.current[1] = el)} className={styles.fieldset}>
           <h2 className={styles.fsTitle}>INFORMATION EQUIPE</h2>
           <div className={styles.step}>
             <input type="text" name="team" placeholder="Nom de l'équipe" value={formData.team} onChange={handleChange} />
-            <input type="text" name="quartier" placeholder="quartier" value={formData.quartier} onChange={handleChange} />
-            <input type="button" name="Retour" className={`${styles.actionButton} ${styles.previous}`} value="Retour" onClick={handlePrevious} />
-            <input type="button" name="Suivant" className={`${styles.actionButton} ${styles.next}`} value="Suivant" onClick={handleNext} />
+            <input type="text" name="quartier" placeholder="Quartier" value={formData.quartier} onChange={handleChange} />
+            <input type="button" className={`${styles.actionButton} ${styles.previous}`} value="Retour" onClick={handlePrevious} />
+            <input type="button" className={`${styles.actionButton} ${styles.next}`} value="Suivant" onClick={handleNext} />
           </div>
         </fieldset>
         <fieldset ref={(el) => (fieldsets.current[2] = el)} className={styles.fieldset}>
           <h2 className={styles.fsTitle}>IMPORTANT</h2>
-          <h3 className={styles.fsSubtitle}></h3>
           <div className={styles.info}>
-            LES FRAIS D'INSCRIPTION SONT AUX PRIX DE 25.000 FR POUR VALIDER L'INSCRIPTION FAITES UN DEPOT AU 0777456115 / 0778261090 
-            ET REVENEZ APPUYER "VALIDER"
+            Les frais d'inscription sont de 25.000 FR. Pour valider l'inscription, effectuez un dépôt au 0777456115 / 0778261090 et appuyez sur "Valider".
           </div>
-          <input type="button" name="Retour" className={`${styles.actionButton} ${styles.previous}`} value="Retour" onClick={handlePrevious} />
-          <button type="submit" className={`${styles.actionButton} ${styles.submit}`} target="_top">VALIDER</button>
+          <input type="button" className={`${styles.actionButton} ${styles.previous}`} value="Retour" onClick={handlePrevious} />
+          <button type="submit" className={`${styles.actionButton} ${styles.submit}`}>Valider</button>
         </fieldset>
       </form>
       <SuccessModal show={showModal} onClose={closeModal} />
