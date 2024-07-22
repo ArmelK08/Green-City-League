@@ -1,10 +1,11 @@
 const express = require('express');
 const router = express.Router();
+
 const Inscription = require('../models/InscriptionModel'); // Chemin relatif au modèle
 
 // Route POST pour l'inscription
 router.post('/inscription', async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://gcl-indol.vercel.app'); // Ajout de l'en-tête CORS
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Ajout de l'en-tête CORS
   try {
     console.log('Requête reçue:', req.body);
     const newInscription = new Inscription(req.body);
@@ -29,7 +30,7 @@ router.post('/inscription', async (req, res) => {
 
 // Route GET pour obtenir toutes les inscriptions
 router.get('/inscription', async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://gcl-indol.vercel.app'); // Ajout de l'en-tête CORS
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Ajout de l'en-tête CORS
   try {
     const inscriptions = await Inscription.find();
     console.log(inscriptions);

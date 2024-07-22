@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const InscriptionRoutes = require('../routes/Inscriptions');
+// const InscriptionRoutes = require('../routes/Inscriptions');
 
 const app = express();
 app.use(express.json());
@@ -26,13 +26,15 @@ mongoose.connect('mongodb+srv://koblankossonou:koblankossonou@cluster0.ecsz1gb.m
 .then(() => console.log('Connexion à MongoDB réussie !'))
 .catch(err => console.log('Connexion à MongoDB échouée !', err));
 
-app.use('/api', InscriptionRoutes);
+// app.use('/api', InscriptionRoutes);
 
 app.get('/', (req, res) => {
   res.send('Bienvenue sur l\'API Green City League');
 });
 
-const DEFAULT_PORT = 3000;
+
+
+const DEFAULT_PORT = 5173;
 const PORT = process.env.PORT || DEFAULT_PORT;
 
 const server = app.listen(PORT, () => {
