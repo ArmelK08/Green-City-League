@@ -159,7 +159,7 @@ function Form() {
         >
           <h2 className={styles.fsTitle}>IMPORTANT</h2>
           <div className={styles.info}>
-            Les frais d'inscription sont de 25.000 FR. Pour valider
+            Les frais d'inscription sont de 15.000 FR. Pour valider
             l'inscription, effectuez un dépôt au 0777456115 / 0778261090 et
             appuyez sur "Valider".
           </div>
