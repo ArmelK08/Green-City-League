@@ -15,6 +15,7 @@ function Form() {
     phone: "",
     equipe: "",
     quartier: "",
+    categorie: "",
   });
   const fieldsets = useRef([]);
 
@@ -124,34 +125,50 @@ function Form() {
           className={styles.fieldset}
         >
           <h2 className={styles.fsTitle}>INFORMATION EQUIPE</h2>
-          <div className={styles.step}>
-            <input
-              type="text"
-              name="equipe"
-              placeholder="Nom de l'équipe"
-              value={formData.equipe}
-              onChange={handleChange}
-            />
-            <input
-              type="text"
-              name="quartier"
-              placeholder="Quartier"
-              value={formData.quartier}
-              onChange={handleChange}
-            />
-            <input
-              type="button"
-              className={`${styles.actionButton} ${styles.previous}`}
-              value="Retour"
-              onClick={handlePrevious}
-            />
-            <input
-              type="button"
-              className={`${styles.actionButton} ${styles.next}`}
-              value="Suivant"
-              onClick={handleNext}
-            />
-          </div>
+      <div className={styles.step}>
+  <input
+    type="text"
+    name="equipe"
+    placeholder="Nom de l'équipe"
+    value={formData.equipe}
+    onChange={handleChange}
+  />
+  <input
+    type="text"
+    name="quartier"
+    placeholder="Quartier"
+    value={formData.quartier}
+    onChange={handleChange}
+  />
+
+  <select
+    name="categorie"
+    value={formData.categorie}
+    onChange={handleChange}
+    className={styles.select}
+  >
+    <option value="">Catégorie</option>
+    <option value="U18">U18</option>
+    <option value="U21">U21</option>
+  </select>
+
+<div>
+    <input
+    type="button"
+    className={`${styles.actionButton} ${styles.previous}`}
+    value="Retour"
+    onClick={handlePrevious}
+  />
+  <input
+    type="button"
+    className={`${styles.actionButton} ${styles.next}`}
+    value="Suivant"
+    onClick={handleNext}
+  />
+</div>
+  
+</div>
+
         </fieldset>
         <fieldset
           ref={(el) => (fieldsets.current[2] = el)}
